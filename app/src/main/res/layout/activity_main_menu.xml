@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+    <ImageView
+        android:background="#60a6fc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlCompat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/green"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gb_sholat"
+                android:background="#feffffff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/jadwal"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/ic_jadwal"
+                    android:text="Jadwal Sholat" />
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/petunjuk"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="22dp"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/ic_book_black_24dp"
+                        android:text="tuntunan shalat" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/kib"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:drawableTop="@drawable/ic_arah"
+                    android:background="@color/white"
+                    android:text="Arah Kiblat" />
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/about"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@color/white"
+                    android:drawableTop="@drawable/ic_about"
+                    android:text="ABOUT" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

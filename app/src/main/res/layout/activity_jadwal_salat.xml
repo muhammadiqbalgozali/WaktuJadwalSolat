@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JadwalSalat">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/container_jam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardElevation="4dp"
+        app:contentPadding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jadwal Sholat Wilayah Bekasi"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jam"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextClock
+                android:id="@+id/tv_jam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:format12Hour="@null"
+                android:format24Hour="H:mm"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:timeZone="GMT+7" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="4dp"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/subuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUBUH :"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txsubuh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subuh"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:text="jam" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="69dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/duhur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="0dp"
+                    android:text="DUHUR :"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txduhur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/duhur"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:text="jam" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="143dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="4dp"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ashar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASHAR :"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txashar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ashar"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:text="jam" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="112dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="4dp"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mahgrib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mahgrib :"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txmagrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mahgrib"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:text="jam" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="38dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="4dp"
+            app:contentPadding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/isa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ISA :"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/isa"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:gravity="center"
+                    android:text="jam" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</LinearLayout>
